@@ -1,0 +1,770 @@
+/* 공통 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #282c34;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+/* 메인 배너 */
+.home_banner {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+    background-color: #000;
+
+}
+.home_banner-wrapper {
+    width: 100%; /* 부모 너비에 맞춤 */
+    margin: 0 auto; /* 가운데 정렬 */
+    transition: all 0.3s ease-in-out; /* 부드러운 크기 조정 */
+}
+
+.home_banner-bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.home_banner-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home_banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.home_banner-content {
+    max-width: 600px;
+    text-align: left;
+    margin: 0 20px;
+}
+
+.home_banner-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.home_banner-content p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.home_more-btn {
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.home_more-btn:hover {
+    opacity: 0.8;
+}
+
+/* 슬라이더 컨테이너 */
+.home_banner-thumbnails-container {
+    position: absolute;
+    bottom: 150px;
+    left: 70%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* 슬라이더 */
+.home_banner-thumbnails {
+    display: flex;
+    width: 400px;
+    gap: 10px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #555 #222;
+}
+
+.home_banner-thumbnails::-webkit-scrollbar {
+    height: 8px;
+}
+
+.home_banner-thumbnails::-webkit-scrollbar-track {
+    background: #222;
+}
+
+.home_banner-thumbnails::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 4px;
+}
+
+/* 썸네일 아이템 */
+.home_banner-thumbnail {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 175px;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.home_banner-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 좌우 버튼 */
+.slider-button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.slider-button:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+
+/*중간 부분 css*/
+
+.home_second_all {
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 (높이가 있는 경우 적용) */
+    flex-direction: column;
+    padding: 20px;
+    background-color: #1a1a1a; /* 배경색 추가 */
+}
+
+.home_new-arrivals {
+    width: 10%;
+    text-align: center; /* 제목 가운데 정렬 */
+}
+
+.home_game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr)); /* 반응형 카드 배치 */
+    gap: 20px; /* 카드 간격 */
+    justify-content: center; /* 그리드 항목 가로 정렬 */
+}
+
+
+.home_new-arrivals {
+    width: 80%;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.home_new-arrivals h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+
+}
+
+.home_game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.home_game-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 콘텐츠 간격 유지 */
+    height: 100%; /* 카드 전체 높이 고정 */
+}
+
+.home_game-card:hover {
+    transform: scale(1.05);
+}
+
+.home_game-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 2px solid #333;
+}
+/*상점보기*/
+.home_game-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 상하 정렬 */
+    height: 100%; /* 부모 요소 높이 고정 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+.home_game-info h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.home_game-info p {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    color: #bbb;
+}
+
+.home_game-btn {
+    width: 150px;
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom:30px; /* 버튼을 아래로 밀기 */
+    transition: background-color 0.3s ease;
+    align-self: center; /* 버튼을 가로 중앙 정렬 */
+}
+
+.home_game-btn:hover {
+    background-color: #ff4c4c;
+}
+/*  베너 */
+.home_banner-middle {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.home_banner-middle-img {
+    max-width: 80%; /* 이미지가 부모 컨테이너 너비를 넘지 않도록 제한 */
+    height: auto; /* 가로세로 비율 유지 */
+    border-radius: 8px; /* 둥근 모서리 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    object-fit: contain; /* 이미지가 잘리지 않고 비율에 맞게 조정 */
+}
+
+@media (max-width: 768px) {
+    .home_banner-middle-img {
+        max-width: 90%; /* 작은 화면에서는 이미지 크기를 줄임 */
+    }
+}
+
+/* 할인 섹션 */
+.home_discount_game {
+    display: flex;
+    justify-content: center; /* 가로 방향으로 중앙 정렬 */
+    align-items: center; /* 세로 방향으로 중앙 정렬 (필요 시) */
+    background-color: #1a1a1a; /* 섹션 배경색 */
+}
+.discount-section {
+    width: 76%;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.discount-section h2 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.discount-game-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 1층에 5개 */
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.discount-game-card {
+    position: relative;
+    background-color: #252525;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.discount-game-card:hover {
+    transform: scale(1.05);
+}
+
+.discount-game-thumbnail {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 2px solid #333;
+}
+
+.discount-game-info {
+    padding: 10px;
+    color: #fff;
+}
+
+.discount-game-title {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+.discount-game-pricing {
+    display: flex;
+    justify-content: space-between; /* 할인 퍼센트와 금액을 양쪽 끝으로 배치 */
+    align-items: center;
+}
+
+.discount-rate {
+    color: #ff6b6b;
+    font-weight: bold;
+
+}
+
+.price-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 금액 정보는 왼쪽 정렬 */
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+.current-price {
+    color: #4caf50;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+/* 마지막 */
+
+/* 뉴스 섹션 */
+.home_news_update {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 2000px;
+    font-family: 'Arial', sans-serif;
+}
+.news-section {
+    width: 100%;
+}
+.news-section h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+.news-content h3 {
+    color: white;
+}
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 한 줄에 2개 */
+    gap: 20px;
+}
+
+.news-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+.news-card h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px; /* 텍스트와 이미지 간격 */
+}
+
+.news-thumbnail {
+    width: 150px; /* 고정 너비 */
+    height: 100px; /* 고정 높이 */
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    flex-shrink: 0; /* 썸네일이 줄어들지 않도록 설정 */
+}
+@media (max-width: 768px) {
+    .news-grid {
+        grid-template-columns: 1fr; /* 모바일에서는 한 줄에 하나 */
+    }
+
+    .news-thumbnail {
+        width: 100%; /* 모바일에서는 전체 너비 사용 */
+        height: 150px; /* 높이 조정 */
+    }
+}
+
+
+.news-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* 개별 뉴스 더보기*/
+.news-read-more-btn {
+    background-color: #ff6b6b;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* 버튼과 콘텐츠 간 간격 */
+}
+
+.news-read-more-btn:hover {
+    background-color: #ff4c4c;
+}
+
+
+
+/* 전체 뉴스 더보기 버튼*/
+.news-more-btn {
+    display: block;
+    margin: 20px auto 0;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.news-more-btn:hover {
+    background-color: #0056b3;
+}
+
+.news-new-icon {
+    width: 20px; /* 이미지 크기 */
+    height: 20px;
+}
+/* Footer */
+.home_footer {
+    background-color: #1b1b1b;
+    color: #ccc;
+    padding: 20px 40px;
+    font-size: 14px;
+    line-height: 1.6;
+    border-top: 2px solid gray ;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo-section {
+    margin-bottom: 20px;
+}
+
+
+
+.footer-links {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-social-links li a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.footer-social-links li a:hover {
+    text-decoration: underline;
+}
+/* 장바구니 */
+
+.cart-button {
+    position: fixed; /* 화면에 고정 */
+    bottom: 20px; /* 하단 위치 */
+    right: 20px; /* 오른쪽 위치 */
+    background-color: #007bff; /* 버튼 배경색 */
+    color: white; /* 텍스트 색상 */
+    border: none; /* 테두리 제거 */
+    border-radius: 50%; /* 둥근 버튼 */
+    width: 50px; /* 버튼 크기 */
+    height: 50px; /* 버튼 크기 */
+    display: flex; /* 아이콘 가운데 정렬 */
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; /* 아이콘 크기 */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+    cursor: pointer; /* 마우스 포인터 변경 */
+    z-index: 1000; /* 다른 요소 위에 표시 */
+}
+
+.cart-button:hover {
+    background-color: #0056b3; /* 호버 시 색상 변경 */
+    transform: scale(1.1); /* 약간 확대 */
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.cart-item-count {
+    position:absolute;
+    top: -5px;
+    right: 0px;
+    background-color: #f44343;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+
+}
+
+
+/* 모바일 (최대 768px) */
+@media (max-width: 768px) {
+    .home_banner {
+        height: 500px; /* 배너 높이 축소 */
+    }
+
+    .home_banner-overlay {
+        width: 100%; /* 오버레이 너비 조정 */
+    }
+
+    .home_banner-content h1 {
+        font-size: 1.8rem; /* 텍스트 크기 조정 */
+    }
+
+    .home_banner-content p {
+        font-size: 0.9rem; /* 본문 텍스트 축소 */
+    }
+
+    .home_banner-thumbnails-container {
+        bottom: 20px; /* 슬라이더 위치 조정 */
+        left: 50%; /* 가로 중앙 정렬 */
+        transform: translateX(-50%);
+        width: 90%; /* 슬라이더 폭 조정 */
+    }
+    .home_banner-thumbnails {
+        width: 100%; /* 슬라이더 전체 너비 사용 */
+    }
+
+    .home_banner-thumbnail {
+        width: 100px; /* 썸네일 크기 축소 */
+        height: 60px;
+    }
+    .slider-button {
+        display: none; /* 버튼 숨기기 */
+    }
+
+
+    .home_game-grid {
+        grid-template-columns: 1fr; /* 한 줄에 하나의 카드 */
+    }
+
+    .discount-game-grid {
+        grid-template-columns: 1fr; /* 할인 게임도 한 줄에 하나 */
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr; /* 모바일에서는 한 줄에 하나 */
+    }
+
+    .news-card {
+        flex-direction: column; /* 세로 정렬로 변경 */
+        align-items: center; /* 가운데 정렬 */
+        text-align: center; /* 텍스트도 가운데 정렬 */
+    }
+
+    .home_banner-middle-img {
+        max-width: 100%; /* 중간 배너 이미지 화면에 맞춤 */
+    }
+    .news-thumbnail {
+        width: 100px; /* 썸네일 가로 크기 조정 */
+        height: 100px; /* 높이를 비율에 맞게 */
+        margin-bottom: 10px; /* 카드 간 간격 추가 */
+    }
+
+}
+
+/* 태블릿 (768px ~ 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .home_banner {
+        height: 700px; /* 배너 높이 중간 크기 */
+        overflow: hidden; /* 배너 내 불필요한 스크롤 숨김 */
+    }
+
+    .home_banner-thumbnails-container {
+        position: absolute;
+        bottom: 20px; /* 위치 조정 */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%; /* 적당한 슬라이더 크기 */
+        display: flex;
+        align-items: center;
+        overflow-x: auto; /* 가로 스크롤 활성화 */
+        gap: 15px; /* 간격 추가 */
+        scrollbar-width: none; /* 기본 스크롤바 숨김 */
+    }
+
+
+    .home_banner-thumbnails {
+        display: flex;
+        gap: 15px; /* 썸네일 간 간격 */
+        width: 100%;
+    }
+
+    .home_banner-content h1 {
+        font-size: 2.2rem; /* 텍스트 크기 중간 조정 */
+    }
+
+    .home_banner-content p {
+        font-size: 1rem; /* 본문 텍스트 크기 유지 */
+    }
+
+
+    .home_banner-thumbnail {
+        flex: 0 0 auto;
+        width: 150px; /* 썸네일 크기 */
+        height: 90px; /* 썸네일 높이 */
+        border-radius: 8px; /* 모서리 둥글게 */
+        transition: transform 0.3s ease;
+    }
+
+
+
+    .home_game-grid {
+        grid-template-columns: repeat(2, 1fr); /* 한 줄에 2개 */
+    }
+
+    .discount-game-grid {
+        grid-template-columns: repeat(2, 1fr); /* 할인 게임도 한 줄에 2개 */
+    }
+
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr); /* 태블릿에서는 두 개씩 표시 */
+    }
+    .news-card {
+        flex-direction: column; /* 세로 정렬로 변경 */
+        align-items: center; /* 가운데 정렬 */
+        text-align: center; /* 텍스트도 가운데 정렬 */
+    }
+
+    .news-thumbnail {
+        width: 100%; /* 썸네일 가로 크기 조정 */
+        height: 200px; /* 적절한 높이 설정 */
+        background-size: cover; /* 이미지가 전체를 덮도록 설정 */
+        background-position: center; /* 이미지 중앙 정렬 */
+        margin-bottom: 10px; /* 이미지와 텍스트 간격 추가 */
+        border-radius: 10px; /* 모바일에서도 둥근 모서리 유지 */
+    }
+    .home_banner-middle-img {
+        max-width: 90%; /* 중간 배너 이미지 조정 */
+    }
+}
+
+/* PC (1024px 이상) */
+@media (min-width: 1024px) {
+    .home_banner {
+        height: 900px; /* 원래 배너 크기 */
+    }
+
+    .home_game-grid {
+        grid-template-columns: repeat(4, 1fr); /* 한 줄에 4개 */
+    }
+
+    .discount-game-grid {
+        grid-template-columns: repeat(5, 1fr); /* 할인 게임 한 줄에 5개 */
+    }
+
+
+}
+@media (min-width: 1500px) and (max-width: 1750px) {
+    .home_banner-thumbnails-container{
+        transform: translateX(-10%);
+    }
+}
+@media (min-width: 1300px) and (max-width: 1500px) {
+    .home_banner-thumbnails-container{
+        transform: translateX(-15%);
+    }
+}
+@media (min-width: 1025px) and (max-width: 1300px) {
+    .home_banner-thumbnails-container{
+        transform: translateX(-30%);
+    }
+}

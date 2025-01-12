@@ -1,0 +1,82 @@
+
+
+body {
+    background-color:#282c34; /* 배경색 */
+}
+
+/* 전체 컨테이너 */
+.makeplayer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgba(43, 43, 59, 0.87); /* 배경색 */
+}
+
+.agree {
+    color : black;
+    font-weight: bold;
+}
+/* 카드 스타일 */
+.makeplayer-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* 제목 스타일 */
+.makeplayer-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* 입력 필드 스타일 */
+.makeplayer-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.makeplayer-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* 개인정보 동의 체크박스 */
+.makeplayer-agreement {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.makeplayer-checkbox {
+    margin-right: 10px;
+}
+
+/* 버튼 */
+.makeplayer-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.makeplayer-button:hover {
+    background-color: #0056b3;
+}

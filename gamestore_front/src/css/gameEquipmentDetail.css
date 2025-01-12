@@ -1,0 +1,149 @@
+/* 전체 컨테이너 */
+
+.equipment-detail-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+.cart-item-count {
+    position:absolute;
+    top: -5px;
+    right: 0px;
+    background-color: #f44343;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+
+}
+.button-success,
+.button-disabled {
+    background-color: #ff6b6b;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* 버튼과 콘텐츠 간 간격 */
+}
+
+.button-success:hover,
+.button-disabled:hover{
+    background-color: #ff4c4c;
+}
+.button-primary {
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* 버튼과 콘텐츠 간 간격 */
+}
+.button-primary:hover{
+    background-color:  #45a049;
+}
+/* 로딩 및 에러 메시지 */
+.loading,
+.error-message {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* 상세 정보 */
+.equipment-detail {
+    text-align: center;
+}
+
+/* 이미지 */
+.equipment-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 이름 */
+.equipment-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* 카테고리 */
+.equipment-category {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* 가격 */
+.equipment-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff4d4d; /* 빨간색 강조 */
+    margin-bottom: 20px;
+}
+
+/* 설명 */
+.equipment-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* 구매 링크 */
+.purchase-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.purchase-link:hover {
+    background-color: #0056b3;
+}
+.equi_detail{
+    color: black;
+}
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .details {
+        font-size: 1rem;
+    }
+
+    .equipment-price {
+        font-size: 1.2rem;
+    }
+
+    .equipment-description {
+        font-size: 0.9rem;
+    }
+
+    .purchase-link {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}

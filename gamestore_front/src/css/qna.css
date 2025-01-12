@@ -1,0 +1,107 @@
+/* QnA 전체 컨테이너 스타일 */
+.qna-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* QnA 제목 스타일 */
+.qna-title {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* '문의가 없습니다' 텍스트 스타일 */
+.qna-no-inquiries {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+}
+
+/* QnA 리스트 스타일 */
+.qna-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* 각 QnA 아이템 스타일 */
+.qna-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 5px;
+  margin-bottom: 15px; /* QnA 아이템 간격 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+/* QnA 아이템 호버 효과 */
+.qna-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* QnA 버튼 스타일 */
+.qna-button {
+  background-color: darkgray;
+  color: beige;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%; /* 버튼을 아이템 영역에 맞게 확장 */
+  text-align: left;
+}
+
+.qna-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.qna-button:active {
+  background-color: #004085;
+}
+
+/* 페이지네이션 컨테이너 */
+.qna-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 5px;
+}
+
+/* 페이지네이션 버튼 스타일 */
+.qna-pagination-button {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #007bff;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.qna-pagination-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.qna-pagination-button.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.qna-pagination-button:disabled {
+  background-color: #f1f1f1;
+  color: #ccc;
+  cursor: not-allowed;
+}

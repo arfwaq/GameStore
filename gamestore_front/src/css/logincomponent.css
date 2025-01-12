@@ -1,0 +1,124 @@
+/* 로그인 컨테이너 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#282c34;
+    color: #fff;
+    font-family: sans-serif;
+}
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px; /* 높이와 내부 여백을 늘림 */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 화면 가운데 정렬 */
+}
+
+/* 헤더 */
+.login-header h1 {
+    font-size: 2.5rem; /* 글자 크기 조금 더 큼 */
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px; /* 아래 여백 추가 */
+}
+
+/* 폼 */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* 각 입력 필드 사이 여백 증가 */
+}
+
+.login-form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.login-input {
+    width: 100%;
+    padding: 12px; /* 입력 필드 높이 증가 */
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.login-input:focus {
+    border-color: #0077ff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 119, 255, 0.5);
+}
+
+/* 로그인 버튼 */
+.login-button {
+    background-color: #0077ff;
+    color: #ffffff;
+    height: 48px;
+    font-size: 1.2rem; /* 버튼 글자 크기 증가 */
+    padding: 12px; /* 버튼 높이 증가 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #005bb5;
+}
+
+/* 카카오 로그인 버튼 */
+.kakao-login-button {
+    background-color: #f7e600;
+    color: #3c1e1e;
+    font-size: 1rem;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.kakao-login-button:hover {
+    background-color: #f9d916;
+}
+
+/* 회원가입 버튼 */
+.signup-button {
+    display: block;
+    margin: 20px auto 0;
+    color: #0077ff;
+    font-size: 1rem;
+    background: none;
+    border: 1px solid transparent; /* 기본 상태 투명한 테두리 */
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.signup-button:hover {
+    color: #ffffff;
+    background-color: #0077ff; /* 배경색 추가 */
+    border: 1px solid #005bb5; /* 테두리 색상 추가 */
+}
+
+.kakao-login-image {
+    width: 100%;
+}
+

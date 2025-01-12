@@ -1,0 +1,116 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+}
+
+.results-modal {
+    max-height: 70vh;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.preview-container {
+    margin-top: 10px;
+}
+
+.preview-image {
+    width: 100px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.top-genres,
+.all-genres {
+    margin: 20px 0;
+}
+
+.top-genres h4,
+.all-genres h4 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.top-genres ul,
+.all-genres ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-genres li,
+.all-genres li {
+    margin: 5px 0;
+}
+
+.top-genres button,
+.all-genres button {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: #007BFF;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.top-genres img {
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+}
+
+.all-genres img {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}
+
+.close-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.image-search-button {
+    padding: 7px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.image-search-button:hover {
+    background-color: #0056b3;
+}

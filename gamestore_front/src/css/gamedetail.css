@@ -1,0 +1,113 @@
+/* 게임 상세 컨테이너 */
+.game-detail-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #ddd;
+    background-color: #282c34;
+    border-radius: 8px;
+}
+
+/* 게임 제목 컨테이너 (좌측 상단) */
+.game-title-container {
+    margin-bottom: 20px;
+}
+
+.game-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+/* 게임 제목과 미디어+정보 컨테이너 */
+.game-header {
+    display: flex; /* Flexbox 적용 */
+    flex-direction: row; /* 수평 정렬 */
+    align-items: flex-start; /* 위쪽 정렬 */
+    gap: 20px; /* 요소 간 간격 */
+    margin-bottom: 20px;
+}
+.cart-item-count {
+    position:absolute;
+    top: -5px;
+    right: 0px;
+    background-color: #f44343;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+
+}
+
+/* 트레일러/썸네일 컨테이너 */
+.media-container {
+    flex: 1; /* 왼쪽 영역 */
+    max-width: 60%; /* 최대 너비 */
+    height: 405px;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.media-container iframe,
+.media-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 게임 정보 컨테이너 */
+.game-info-container {
+    flex: 1; /* 오른쪽 영역 */
+    background-color: #2a475e;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.game-info-container h2 {
+    color: #66c0f4;
+    margin-bottom: 10px;
+}
+
+.game-info-container p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+/* 게임 설명 */
+.game-description {
+    margin: 20px 0;
+    background-color: #2a475e;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.game-description h2 {
+    color: #66c0f4;
+}
+
+/* 시스템 요구사항 */
+.game-specs {
+    background-color: #2a475e;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.game-specs h2,
+.game-specs h3 {
+    color: #66c0f4;
+}
+
+.game-specs p {
+    margin: 5px 0;
+}

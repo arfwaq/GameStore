@@ -1,0 +1,409 @@
+/* navbar.css */
+
+/* 기본 스타일 */
+#navbar {
+    background-color: #333;
+    color: white;
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto; /* 중앙 정렬 */
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+    max-height: 100vh; /* 기본적으로 열려있음 */
+}
+
+.navbar-links ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin: 0 10px;
+}
+
+.navbar-links a,
+.logout-button,
+.logout-button a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3s;
+    font-size: 16px; /* 기본 폰트 크기 */
+}
+
+.navbar-links a:hover,
+.logout-button:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    font-size: 12px;
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    /*gap: 10px; !* 요소 간의 간격 축소 *!*/
+    position: relative;
+}
+
+/* PC용 항상 보이는 검색 바 */
+.desktop-search {
+    display: none; /* 기본적으로 숨김 */
+    align-items: center;
+}
+
+.desktop-search .navInput {
+    display: inline-block;
+}
+
+.desktop-search .search-button {
+    display: inline-block;
+}
+
+.desktop-search .image-search-button {
+    display: inline-block;
+}
+
+/* 검색 모드가 활성화된 경우 */
+.active-search {
+    display: flex;
+    align-items: center;
+}
+
+.active-search .navInput {
+    display: inline-block;
+}
+
+.active-search .search-button {
+    display: inline-block;
+}
+
+.active-search .image-search-button {
+    display: inline-block;
+}
+
+.close-search {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* 검색 버튼 */
+.search-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px; /* 검색 버튼 폰트 크기 축소 */
+    display: none; /* 기본적으로 숨김 */
+}
+
+.search-icon {
+    display: none; /* 기본적으로 숨김 */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navInput {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px; /* 기본 폰트 크기 */
+    display: none; /* 기본적으로 숨김 */
+    transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.navbar-nickname {
+    color: white;
+    text-decoration: none;
+    font-size: 12px; /* 기본 폰트 크기 */
+}
+
+.navbar-nickname:hover {
+    text-decoration: underline;
+}
+
+.navbar-login {
+    color: white;
+    text-decoration: none;
+    padding: 5px 9px;
+    font-size: 0.8rem;
+}
+
+.navbar-login:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* 모바일 스타일 */
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-links {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        flex-direction: column;
+        display: none;
+        max-height: 0;
+    }
+
+    .navbar-links.open {
+        display: flex;
+        max-height: 500px; /* 충분히 큰 값으로 설정 */
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    /* 모바일에서 navbar-actions 조정 */
+    .navbar-actions {
+        width: 100%;
+        justify-content: end;
+    }
+    .navbar-logo img {
+        width: 50px;
+    }
+    .navbar-actions .navInput {
+        width: 60%;
+    }
+
+    /* 검색 버튼 간격 조정 */
+    .search-button {
+        margin-left: 5px;
+        width: 50px;
+        margin-right: 10px;
+    }
+
+    .image-search-button {
+        width: 80px;
+    }
+
+    /* 데스크탑 검색 요소 숨기기 */
+    .desktop-search {
+        display: none;
+    }
+
+    /* 모바일에서 검색 아이콘 보이기 */
+    .search-icon {
+        display: block;
+    }
+
+    /* 모바일 검색 모드 활성화 시 */
+    .navbar-container.search-active .active-search {
+        display: flex;
+    }
+
+    /* 검색 모드 활성화 시 닉네임 및 로그아웃 숨기기 */
+    .navbar-container.search-active .navbar-nickname,
+    .navbar-container.search-active .logout-button,
+    .navbar-container.search-active .navbar-login,
+    .navbar-container.search-active .navbar-toggle {
+        display: none;
+    }
+}
+
+/* 태블릿 스타일 */
+@media (min-width: 769px) and (max-width: 1436px) {
+    #navbar {
+        display: flex;
+        flex-direction: row; /* 가로 정렬 */
+        align-items: center;
+        justify-content: space-between; /* 로고, 메뉴, 검색창 균등 배치 */
+        background-color: #333;
+        color: white;
+    }
+
+    .navbar-logo img {
+        width: 60px;
+    }
+
+    .navbar-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end; /* 로고, 메뉴, 검색창 간격 유지 */
+        width: 90%;
+        padding: 6px 2px;
+    }
+
+
+    .active-search {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .navbar-links {
+        flex: 2; /* 메뉴는 가운데 위치 */
+        display: flex;
+        justify-content: center; /* 메뉴를 중앙 정렬 */
+        gap: 15px; /* 메뉴 간 간격 */
+        margin-left: 0px;
+    }
+
+    .navbar-links ul {
+        display: flex;
+        flex-direction: row; /* 메뉴를 수평으로 정렬 */
+        justify-content: center;
+        align-items: center;
+
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .navbar-links li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .navbar-links a {
+        font-size: 12px; /* 메뉴 폰트 크기 축소 */
+        padding: 5px 10px;
+    }
+
+    .logout-button {
+        padding: 0px;
+    }
+
+    .navbar-actions {
+        display: flex;
+        justify-content: flex-end; /* 검색창 오른쪽 정렬 */
+        align-items: center;
+        gap: 10px; /* 검색창과 버튼 간격 */
+
+    }
+
+    /* 메뉴 토글 버튼 숨기기 */
+    .navbar-toggle {
+        display: none;
+    }
+
+    /* 태블릿에서 검색 아이콘 유지 */
+    .search-icon {
+        display: block;
+    }
+
+    /* 태블릿 검색 모드 활성화 시 닉네임 및 로그아웃 숨기기 */
+    .navbar-container.search-active .navbar-nickname,
+    .navbar-container.search-active .logout-button,
+    .navbar-container.search-active .navbar-login {
+        display: none;
+    }
+
+    /* 네비게이션 링크 항상 보이게 설정 */
+    .navbar-links {
+        max-height: none;
+    }
+}
+
+/* PC 스타일 */
+@media (min-width: 1447px) {
+    .desktop-search {
+        display: flex;
+        align-items: center;
+    }
+
+    .navInput.desktop-search {
+        display: inline-block;
+    }
+
+    .search-button.desktop-search {
+        display: inline-block;
+    }
+
+    .image-search.desktop-search {
+        display: inline-block;
+    }
+
+    .mobile-search-toggle {
+        display: none;
+    }
+
+    .search-icon.mobile-search-toggle {
+        display: none;
+    }
+
+    .mobile-search {
+        display: none;
+    }
+
+    .close-search {
+        display: none;
+    }
+
+    /* PC에서 검색 아이콘 숨기기 */
+    .search-icon {
+        display: none;
+    }
+    .navbar-logo img {
+        width: 70px;
+    }
+    /* PC용 검색창 및 버튼 표시 */
+    .desktop-search .navInput,
+    .desktop-search .search-button,
+    .desktop-search .image-search-button {
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    /* PC에서 navbar-actions 조정 */
+    .navbar-actions {
+        justify-content: flex-end;
+    }
+}

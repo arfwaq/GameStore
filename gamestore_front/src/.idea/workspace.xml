@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e994d7dd-193b-43e7-baf7-cd2ee1ae214d" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/src.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppLayout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChatContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chatbot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/find/FindID.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/find/ModifyPw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/navpage/Category.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/navpage/Community.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/navpage/MyPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/navpage/News.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/navpage/NewsDetails.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/navpage/Promotion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/navpage/Shop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/navpage/Support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/navpage/community/AddCommuPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/navpage/community/IndexCommuPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/navpage/community/ListCommuPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/navpage/community/ModifyCommuPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/navpage/community/ReadCommuPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/navpage/community/css/IndexCommuPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/player/KakaoRedirectPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/player/LoginPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/player/LogoutPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/player/MakePlayer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/player/ModifyPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/player/PlayerProfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/LoveApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/OrderApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/PlayerApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/cartApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/communityApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/kakaoApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/todoApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/AllComments.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/CartComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/CartItemComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/CreateOrder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/LikeButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Navbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/SearchBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/common/AuthContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/common/ResultModal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/community/AddCommuComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/community/FetchingModal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/community/ListCommuComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/community/ModifyCommuComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/community/PageCommuComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/community/ReadCommuComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/community/ResultModal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/community/css/AddCommuComponent.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/community/css/AddReplyComponent.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/community/css/ListCommuComponent.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/community/css/ModifyCommuComponent.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/community/css/PageCommuComponent.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/community/css/ReadCommuComponent.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/community/css/ReadReplyComponent.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/community/reply/AddReplyComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/community/reply/ListReplyComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/community/reply/ModifyReplyComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/community/reply/PageReplyComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/community/reply/ReadReplyComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/player/KakaoLoginComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/player/LoginComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/player/LogoutComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/player/ModifyComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/AllandCategoryEq.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/NewsDetails.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/adminpage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/cart.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/logincomponent.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/makeplyer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/modifypw.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/mypage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/navbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/playerprofile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/PlayerLoginHook.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/useCustomCart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/useCustomLogin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/useCustomMove.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/kakao_login_medium_wide.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/router/PlayerRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/router/communityRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/router/root.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slices/loginSlice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/TimeUtil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/cookieUtil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/jwtUtil.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2qdymuuJ20pIWOCAXU7j6uO8ecr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/EZEN/IdeaProjects/gamestore/gamestore_back&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\EZEN\IdeaProjects\gamestore\gamestore_front\src" />
+      <recent name="C:\Users\EZEN\IdeaProjects\gamestore\gamestore_front\src\components" />
+      <recent name="C:\Users\EZEN\IdeaProjects\gamestore\gamestore_front\src\hooks" />
+      <recent name="C:\Users\EZEN\IdeaProjects\gamestore\gamestore_front\src\api" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\EZEN\IdeaProjects\gamestore\gamestore_front\src\image" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="e994d7dd-193b-43e7-baf7-cd2ee1ae214d" name="변경" comment="" />
+      <created>1735006908466</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1735006908466</updated>
+      <workItem from="1735006909654" duration="14721000" />
+      <workItem from="1735036278485" duration="98000" />
+      <workItem from="1735181953225" duration="6997000" />
+      <workItem from="1735442165315" duration="9000" />
+      <workItem from="1735442213959" duration="8625000" />
+      <workItem from="1735450916963" duration="16460000" />
+      <workItem from="1735538312643" duration="45263000" />
+      <workItem from="1735805287996" duration="5823000" />
+      <workItem from="1735876978832" duration="199000" />
+      <workItem from="1735877187639" duration="6556000" />
+      <workItem from="1735886117170" duration="9196000" />
+      <workItem from="1735995307058" duration="1375000" />
+      <workItem from="1736134962861" duration="3711000" />
+      <workItem from="1736144957127" duration="43000" />
+      <workItem from="1736145093645" duration="5113000" />
+      <workItem from="1736154260789" duration="10564000" />
+      <workItem from="1736221583010" duration="1815000" />
+      <workItem from="1736229766172" duration="14796000" />
+      <workItem from="1736305088080" duration="2716000" />
+      <workItem from="1736308120145" duration="7709000" />
+      <workItem from="1736331171074" duration="4593000" />
+      <workItem from="1736389073554" duration="6617000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Pages/supportpages/FaqCreate.js</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/Navbar.js</url>
+          <line>4</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/community/reply/ReadReplyComponent.js</url>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,0 +1,77 @@
+/* ReadReplyComponent.css */
+
+/* 전체 컨테이너 */
+.read-reply-container {
+    /*max-width: 600px;*/
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Arial", sans-serif;
+}
+
+/* 개별 댓글 아이템 */
+.reply-item {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+/* 댓글 내용 */
+.reply-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.reply-id,
+.reply-author,
+.reply-text,
+.reply-date {
+    font-size: 0.875rem;
+    color: #333;
+}
+
+.reply-id strong,
+.reply-author strong,
+.reply-text strong,
+.reply-date strong {
+    font-weight: bold;
+}
+
+/* 수정 버튼 */
+.modify-button2 {
+    align-self: flex-end;
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.modify-button:hover {
+    background-color: #007bbd;
+    transform: translateY(-2px);
+}
+
+/* 구분선 */
+.reply-divider {
+    font-size: 0.75rem;
+    color: #aaa;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* 댓글 없음 */
+.no-replies {
+    text-align: center;
+    font-size: 1rem;
+    color: #888;
+    margin-top: 1rem;
+}

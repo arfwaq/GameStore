@@ -1,0 +1,65 @@
+/* 전체 컨테이너 스타일 */
+.support-container {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-height: 1200px;
+}
+
+/* 사이드바 스타일 */
+.support-sidebar {
+  width: 300px; /* 사이드바 너비 */
+  border-right: 2px solid #ddd; /* 세로줄 */
+  background-color: #f9f9f9; /* 연한 배경색 */
+  padding: 10px;
+}
+
+.support-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color : #3a3a3a;
+}
+
+.support-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.support-sidebar li {
+  margin-bottom: 10px;
+}
+
+.support-sidebar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.support-sidebar a:hover {
+  color: #007bff; /* 링크 호버 효과 */
+}
+
+/* 콘텐츠 영역 스타일 */
+.support-content {
+  flex-grow: 1; /* 나머지 공간 차지 */
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .support-container {
+    flex-direction: column;
+  }
+
+  .support-sidebar {
+    border-right: none;
+    border-bottom: 2px solid #ddd;
+    width: 100%;
+  }
+}

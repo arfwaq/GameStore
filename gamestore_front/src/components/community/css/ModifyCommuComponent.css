@@ -1,0 +1,129 @@
+.modify-commu-container {
+    max-width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #262626;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.form-group .value {
+    padding: 10px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+}
+
+.input-field,
+.textarea-field,
+.file-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.textarea-field {
+    resize: vertical;
+}
+
+.images-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-item {
+    position: relative;
+}
+
+.uploaded-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #dbdbdb;
+}
+
+.delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.delete-button:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+    color: #fff;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.action-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.action-button.delete {
+    background-color: #efefef;
+    color: #ed4956;
+}
+
+.action-button.delete:hover {
+    background-color: #dbdbdb;
+}
+
+.action-button.modify {
+    background-color: #0095f6;
+    color: #fff;
+}
+
+.action-button.modify:hover {
+    background-color: #007bb5;
+}
+
+.action-button.list {
+    background-color: #fafafa;
+    color: #262626;
+}
+
+.action-button.list:hover {
+    background-color: #e6e6e6;
+}

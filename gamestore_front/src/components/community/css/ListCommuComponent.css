@@ -1,0 +1,152 @@
+/* ListCommuComponent.css */
+
+/* 전체 컨테이너 (모바일에 맞춰 폭 제한, 필요 시 조절) */
+.list-commu-container {
+    width: 100%;
+    /*max-width: 600px;*/
+    margin: 2rem auto;
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+/* 피드 래퍼: 세로로 길게 쌓이는 방식(스크롤) */
+.feed-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* 게시물 카드 */
+.post-card {
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+    background-color: #ffffff;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+/* 게시물 상단: 프로필 + 닉네임 */
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #3a3a3a;
+
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 0.8rem;
+    border: 1px solid #dbdbdb;
+}
+
+.writer-name {
+    font-weight: 600;
+    color: #262626;
+}
+
+/* 게시물 이미지 영역 */
+.post-image-wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #fafafa;
+}
+
+.post-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 하단 정보 섹션 */
+.post-info-wrapper {
+    padding: 0.5rem 1rem 1rem;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.post-icons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.post-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* 좋아요 수 */
+.post-likes {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: #262626;
+}
+
+/* 게시물 텍스트 */
+.post-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.post-writer {
+    font-weight: 600;
+    color: #262626;
+}
+
+.post-text {
+    color: #262626;
+    white-space: pre-wrap;
+}
+
+/* 댓글 카운트 */
+.post-comments-count {
+    font-size: 0.8rem;
+    color: #8e8e8e;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+/* 게시 날짜 */
+.post-date {
+    font-size: 0.7rem;
+    color: #8e8e8e;
+}
+
+/* 데이터 없을 때 */
+.no-data {
+    text-align: center;
+    color: #999999;
+    margin: 2rem 0;
+}
+.post-content-summary {
+
+    padding: 0.5rem 1rem 1rem;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+
+}
+/* 반응형 (모바일 최적화) */
+@media (max-width: 480px) {
+    .list-commu-container {
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .post-card {
+        margin-bottom: 1.5rem;
+    }
+}

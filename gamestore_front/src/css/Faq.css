@@ -1,0 +1,226 @@
+/* FAQ 전체 컨테이너 */
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* FAQ 제목 */
+.faq-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* 카테고리 선택 버튼 */
+.faq-categories {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.faq-category {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.faq-categories button {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.faq-categories button:hover {
+  background-color: green;
+  color: white;
+}
+
+.faq-categories button.active {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
+
+/* FAQ 리스트 */
+.faq-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  align-items: center;
+}
+
+/* 체크박스 */
+.faq-item input[type='checkbox'] {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* 체크박스 숨김 (일반 사용자) */
+.faq-item input[type='checkbox'].admin-only {
+  display: none;
+}
+
+/* 질문 영역 */
+.faq-question {
+  margin-right: 60px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 40px; /* 체크박스를 위한 공간 확보 */
+  color: #333;
+}
+
+/* 답변 영역 */
+.faq-answer {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 40px; /* 질문과 동일한 왼쪽 정렬 */
+  margin-right: 60px;
+  color: #555;
+}
+
+/* 수정 버튼 */
+.modify-button {
+  position: absolute;
+  right: 10px; /* 오른쪽 여백 설정 */
+  top: 50%; /* 부모 요소의 중앙에 배치 */
+  transform: translateY(-50%);
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modify-button:hover {
+  background-color: #005bb5;
+}
+
+.admin-actions {
+  display: flex;
+  margin-bottom: 5px;
+  gap: 15px;
+}
+
+/* 등록 버튼 */
+.register-button {
+  margin-left: 0px;
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*선택 삭제 버튼 */
+.delete-button {
+  margin-left: auto; /* 버튼이 오른쪽으로 배치되도록 설정 */
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 전체 선택 버튼 */
+.select-all {
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modify-button:hover,
+.delete-button:hover {
+  background-color: #005bb5;
+}
+
+/* 페이지네이션 */
+.faq-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.faq-page-movebutton {
+  display: inline-block;
+  font-weight: bold;
+  padding: 8px;
+  color: white; /* 글자 색상 */
+  background-color: #007bff; /* 버튼 기본 배경색 */
+  border: none; /* 테두리 제거 */
+  border-radius: 5px; /* 둥근 모서리 */
+  cursor: pointer; /* 마우스 커서 변경 */
+  text-align: center; /* 텍스트 중앙 정렬*/
+  transition: background-color 0.3s ease, transform 0.2s ease; /* 부드러운 애니메이션 */
+}
+
+.faq-page-movebutton:hover {
+  background-color: #0056b3; /* 호버 시 배경색 변경 */
+  transform: translateY(-2px); /* 호버 시 살짝 위로 올라가는 효과 */
+}
+
+.faq-page-movebutton:disabled {
+  background-color: #ccc; /* 비활성화 상태 배경색 */
+  cursor: not-allowed; /* 비활성화 상태 마우스 커서 */
+  color: #666; /* 비활성화 상태 글자 색상 */
+  transform: none; /* 비활성화 상태에서 애니메이션 제거 */
+}
+
+.faq-page-button {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.faq-page-button.active {
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+}
+
+.faq-page-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}

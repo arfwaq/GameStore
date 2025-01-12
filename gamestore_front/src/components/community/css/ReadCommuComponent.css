@@ -1,0 +1,139 @@
+/* ReadCommuComponent.css */
+
+/* 컨테이너 */
+.read-commu-container {
+    max-width: 100%;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+/* 헤더 */
+.post-header {
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.post-header h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.post-header p {
+    font-size: 0.875rem;
+    color: #888;
+    margin: 0.25rem 0;
+}
+
+/* 콘텐츠 */
+.post-content {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.post-image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 액션 버튼 */
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.action-button {
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.action-button:hover {
+    background-color: #007bbd;
+    transform: translateY(-2px);
+}
+
+/* 댓글 섹션 */
+.comments-section {
+    border-top: 1px solid #dbdbdb;
+    padding-top: 1rem;
+    margin-top: 1.5rem;
+}
+
+.comments-section h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 0.75rem;
+}
+
+/* 헤더 전체 */
+.post-header {
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+
+    /* Flex 컨테이너로 바꾸어서 왼쪽/오른쪽으로 구분 */
+    display: flex;
+}
+
+/* 왼쪽 영역 (제목) */
+.header-left {
+    /* 필요 시 별도 스타일 지정 */
+    flex: 1;                /* 공간을 충분히 차지하게 하여 오른쪽과 분리 */
+    text-align: left;       /* 왼쪽 정렬 */
+}
+
+/* 오른쪽 영역 (작성자, 날짜) */
+.header-right {
+    display: flex;          /* 수직 배치를 위해 flex-direction 활용 */
+    flex-direction: column;
+    align-items: flex-end;  /* 오른쪽 정렬 */
+    text-align: right;      /* 내부 텍스트도 오른쪽 정렬 */
+}
+
+/* 제목 스타일 (기존 스타일 유지 가능) */
+.post-header h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0.25rem 0;
+}
+
+/* 전체 p 태그 스타일 (기존과 동일) */
+.post-header p {
+    font-size: 0.875rem;
+    color: #888;
+    margin: 0.25rem 0; /* 간격 */
+}
+
+/* 혹은 좀 더 세밀하게, 작성자와 날짜를 구분해서 스타일링하고 싶다면 */
+.writer {
+    /* 작성자 스타일 */
+}
+
+.date {
+    /* 날짜 스타일 */
+    /* margin-top: 0.5rem; 등으로 간격 조절 가능 */
+}
