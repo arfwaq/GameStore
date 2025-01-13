@@ -44,11 +44,15 @@ SpringBoot, React, Python, AWS를 이용한 게임,장비 판매 사이트
 
 #### 반응형
 - PC
+  
   ![image](https://github.com/user-attachments/assets/282ed6bb-a7b2-4dd7-b188-98ed3fd88b87)
 - 테블릿
+  
   ![image](https://github.com/user-attachments/assets/bf44f4e7-40a6-4c79-b580-708d595dbfb1)
 - 모바일
+  
   ![image](https://github.com/user-attachments/assets/bc35e60b-49b5-449f-9ce3-4cc05250bf05)
+  
 
 #### 회원가입과 로그인
 ![image](https://github.com/user-attachments/assets/9ef64dd1-3a13-4959-b242-7dfe95cf956b)
