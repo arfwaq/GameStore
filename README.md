@@ -33,7 +33,10 @@ SpringBoot, React, Python, AWS를 이용한 게임,장비 판매 사이트
 ---
 ## 주요 기능
 
-#### 메인 페이지
+#### 회원가입과 로그인
+![image](https://github.com/user-attachments/assets/9ef64dd1-3a13-4959-b242-7dfe95cf956b)
+![image](https://github.com/user-attachments/assets/08b4fdeb-c491-4fe3-ba5a-0c0bc4515669)
+
 
 
 https://www.youtube.com/watch?v=duv9RsSwdUw
