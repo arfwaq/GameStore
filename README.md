@@ -19,6 +19,7 @@ SpringBoot, React, Python, AWS를 이용한 게임,장비 판매 사이트
     <td align="simjoungmin"><a href="https://github.com/simjoungmin"><img src="https://avatars.githubusercontent.com/simjoungmin" width="100px;" alt=""/><br /><sub><b>simjoungmin</b></sub></a></td>
   </tr>
 </table>
+
 - 팀장 : 손성한
 - 팀원 : 신승훈, 심정민, 유재혁
 
