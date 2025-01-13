@@ -15,7 +15,16 @@ SpringBoot, React, Python, AWS를 이용한 게임,장비 판매 사이트
 - 팀원 : 신승훈, 심정민, 유재혁
 
 ### 개발환경
-- 언어 : 
+- 언어 : Java 17
+- 개발 도구 : SpringBoot Spring Security, React, Redux-toolkit, Python, AWS
+- IDE : IntelliJ
+- 운영 체제 : Windows
+- Java SDK : Oracle JDK 17
+
+---
+## 주요 기능
+
+#### 메인 페이지
 
 
 https://www.youtube.com/watch?v=duv9RsSwdUw
