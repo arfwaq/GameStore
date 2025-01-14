@@ -44,15 +44,7 @@ SpringBoot, React, Python, AWS를 이용한 게임,장비 판매 사이트
 
 #### 반응형
 - 사이트에 각 버전에 맞춰 크기 조정
-- PC
-  
-  ![image](https://github.com/user-attachments/assets/282ed6bb-a7b2-4dd7-b188-98ed3fd88b87)
-- 테블릿
-  
-  ![image](https://github.com/user-attachments/assets/bf44f4e7-40a6-4c79-b580-708d595dbfb1)
-- 모바일
-  
-  ![image](https://github.com/user-attachments/assets/bc35e60b-49b5-449f-9ce3-4cc05250bf05)  
+![반응형](https://github.com/user-attachments/assets/4792cf66-3153-4163-b17f-364393ef6b2b)
 #
 
 
