@@ -1,4 +1,4 @@
-# FullStack_Team_Project_GameStore
+![image](https://github.com/user-attachments/assets/7331266d-03a7-45a7-ae7a-292bf109fe58)# FullStack_Team_Project_GameStore
 SpringBoot, React, Python, AWS를 이용한 게임,장비 판매 사이트
 
 ## 프로젝트 소개
@@ -38,6 +38,9 @@ SpringBoot, React, Python, AWS를 이용한 게임,장비 판매 사이트
 ## 계층 구조
 ![image](https://github.com/user-attachments/assets/b08fe72f-5415-4ef6-b36a-87b3b851189f)
 
+---
+## 시연영상
+https://www.youtube.com/watch?v=duv9RsSwdUwd
 
 ---
 ## 주요 기능
@@ -100,6 +103,21 @@ SpringBoot, React, Python, AWS를 이용한 게임,장비 판매 사이트
 ![image](https://github.com/user-attachments/assets/ee72cce2-053f-4495-8d51-60ba15f45d82)
 ![image](https://github.com/user-attachments/assets/7bb4ba75-4e0b-4401-a309-1cc73eedd66e)
 ![문의](https://github.com/user-attachments/assets/cbe10699-fde1-4110-bf46-d7432ec472a5)
+#
+
+#### 이미지 검색
+- Python을 이용한 머신러닝으로 이미지 파일 분석
+![image](https://github.com/user-attachments/assets/58e71cea-e17e-4d09-b6c1-0f1265b67fdf)
+![image](https://github.com/user-attachments/assets/713c66d2-99c3-4544-862b-6fccceb57bfb)
+![이미지검색](https://github.com/user-attachments/assets/d38028f8-96d9-446a-82a1-07d215e28103)
+#
+
+#### 챗봇
+- Python을 이용한 사용자 맞춤형 게임 추천과 페이지 네비게이션
+![image](https://github.com/user-attachments/assets/2f0d641a-9f76-45b8-819b-f98a7d5b1dfd)
+![챗봇](https://github.com/user-attachments/assets/9c939685-52f4-4893-88f0-e3c7c17b6444)
+
+
 
 ---
 ## 배포
@@ -115,5 +133,4 @@ SpringBoot, React, Python, AWS를 이용한 게임,장비 판매 사이트
 
 ---
 
-## 시연영상
-https://www.youtube.com/watch?v=duv9RsSwdUwd
+
