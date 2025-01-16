@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/7331266d-03a7-45a7-ae7a-292bf109fe58)# FullStack_Team_Project_GameStore
 SpringBoot, React, Python, AWS를 이용한 게임,장비 판매 사이트
 
 ## 프로젝트 소개
