@@ -1,3 +1,4 @@
+# GameStore
 SpringBoot, React, Python, AWS를 이용한 게임,장비 판매 사이트
 
 ## 프로젝트 소개
